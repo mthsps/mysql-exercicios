@@ -14,7 +14,7 @@ CREATE TABLE categorias (
 -- 4. Faça o relacionamento de categorias na tabela de produto através da foreign key (id_categoria).
 CREATE TABLE produtos (
 	PRIMARY KEY (id),
-    FOREIGN KEY (categoria_id) REFERENCES categoria(id),
+    FOREIGN KEY (categoria_id) REFERENCES categorias (id),
     
 	id           BIGINT      AUTO_INCREMENT,
     categoria_id BIGINT,
